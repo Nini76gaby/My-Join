@@ -1,26 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="login.css">
-	<link rel="favicon" href="">
+	<link rel="stylesheet" href="./css/login.css">
+	<link rel="shortcut icon" href="./assets/img/favicon.svg" type="image/x-icon">
 	<title>Login</title>
 </head>
-
 <body>
 	<div class="start-screen"></div>
 	<img class="logo-start-screen" src="./assets/img/Capa 2.svg">
 	<div class="logo-start-screen-white"></div>
 	<div class="header">
 		<div class="register-section">
-			<span class="typ-register">Not a Join user?</span>
+			<span class="typ-register-span">Not a Join user?</span>
 			<button class="button-signup" onclick="openSignUpPage()">Sign up</button>
 		</div>
 	</div>
-	<div class="login-section-div">
+	 <div class="login-section-div">
 		<div class="login-section">
 			<div class="header-section">
 				<div class="header-login">Login</div>
@@ -47,24 +45,23 @@
 					</div>
 					<div class="login-buttons">
 						<button type="submit" class="button-login">Log In</button>
-						<button type="button" class="button-guest" id="loginButton">Guest Log
+						<button onclick="guestLogin()" type="button" class="button-guest" id="loginButton">Guest Log
 							In</button>
 					</div>
 			</form>
 		</div>
 	</div>
-	<div class="policy">
-		<span class="privacy-policy">Privacy Policy</span>
-		<span class="legal-notice">Legal notice</span>
-	</div>
 	<div class="responsive-header">
 		<div class="register-section">
 			<span class="typ-register">Not a Join user?</span>
-			<button class="button-signup">Sign up</button>
+			<button onclick="openSignUpPage()" class="button-signup">Sign up</button>
 		</div>
 	</div>
-
-	<script src="login.js"></script>
+	<div class="policy">
+		<span onclick="openPrivacyPolicyPage()" class="privacy-policy">Privacy Policy</span>
+		<span onclick="openLegalNoticePage()" class="legal-notice">Legal notice</span>
+	</div>
+	<script src="./js/login.js"></script>
 </body>
 
 </html>
